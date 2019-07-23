@@ -16,7 +16,7 @@ class HelloController {
     @Autowired
     ConversionService conversionService
 
-    @GetMapping
+    @GetMapping('/home')
     String getHome(Model model) {
         LocalDateTime dateTime = LocalDateTime.now()
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern('yyy-MM-dd HH:mm:ss')
