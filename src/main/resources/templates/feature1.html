@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:with="lang=${#locale.language}" th:lang="${lang}">
+<head>
+    <meta charset="UTF-8">
+    <title>Feature 1</title>
+    <link rel="stylesheet" type="text/css" media="all" href="../../webapp/css/mfss.css" th:href="@{../../webapp/css/mfss.css}"/>
+</head>
+<body>
+<nav th:insert="header :: header"></nav>
+
+</body>
+</html>
